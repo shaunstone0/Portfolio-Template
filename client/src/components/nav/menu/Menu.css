@@ -1,0 +1,63 @@
+#flyoutMenu {
+  font-family: 'Work Sans', sans-serif;
+  color: #ffe600;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s cubic-bezier(0, 0.52, 0, 1);
+  overflow: none;
+  z-index: 1000;
+}
+
+#flyoutMenu.hide {
+  transform: translate3d(-100vw, 0, 0);
+}
+
+#flyoutMenu.show {
+  transform: translate3d(0vw, 0, 0);
+  overflow: hidden;
+}
+
+#flyoutMenu h2 a {
+  color: #333;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+#flyoutMenu h2 a:hover {
+  text-decoration: underline;
+}
+
+.nav-links {
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 96px;
+  font-weight: 800;
+  line-height: 77px;
+  width: 50%;
+  height: 100%;
+  margin: 50px 0 0 100px;
+}
+
+.nav-links a {
+  color: #ffe600;
+}
+
+.nav-links ul li {
+  list-style-type: none;
+  margin: 25px 0;
+}
+
+.link-span {
+  display: block;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.link-span:hover {
+  color: #fafafa;
+  transform: translateX(50px);
+}
