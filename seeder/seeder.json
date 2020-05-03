@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Time-Keeper Application",
+        "picture": "timekeeper.jpg",
+        "author": "Shaun Stone",
+        "desc": "The Timekeeper web application was built for a Human Resources company to keep track of employees. The application offers many useful tools for both the user, and the human resources company. The user starts by seeing just the login page and can either create a new account for a new company or log into a current account. After logging in the user is brought to a Dashboard area, where they can check in for work, and update essential profile information for the employer. The dashboard area shows the user how many hours they worked this week and can be expanded to hours worked for the year. I have worked for many companies that have web-based login systems for employees, and they all seem to be lacking one thing: Feedback to the Employee. The Dashboards only provided a place to login and logout, and I was always asking myself “Where can I see more?” Therefore, I created Timekeeper.",
+        "tech": [
+            "Nodejs",
+            "React",
+            "MongoDB"
+        ]
+    },
+    {
+        "name": "JavaScript Project 1",
+        "picture": "",
+        "author": "Shaun Stone",
+        "desc": "This project takes a dive into Jquery, and how to properly use classes.",
+        "tech": [
+            "Jquery"
+        ]
+    },
+    {
+        "name": "JavaScript Project 2",
+        "picture": "",
+        "author": "Shaun Stone",
+        "desc": "An even deeper dive into Jquery, using Ajax to call data and use an API.",
+        "tech": [
+            "Jquery"
+        ]
+    },
+    {
+        "name": "Animated Portfolio Template",
+        "picture": "",
+        "author": "Shaun Stone",
+        "desc": "A template created for a portfolio, it has animations and so forth",
+        "tech": [
+            "Nodejs",
+            "React",
+            "MongoDB"
+        ]
+    }
+]
