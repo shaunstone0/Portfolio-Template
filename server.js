@@ -8,6 +8,7 @@ const mongoSanitize = require('express-mongo-sanitize');
 const helmet = require('helmet');
 const xssClean = require('xss-clean');
 const connectDB = require('./config/db');
+const path = require('path')
 // Express variable
 const app = express();
 
@@ -35,6 +36,15 @@ app.use(xssClean());
 
 // Mount Routes
 app.use('/projects', projects);
+
+
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('client/build'));
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+  });
+}
+
 // Must got Below Routes to Catch Errors
 app.use(errorHandler);
 
