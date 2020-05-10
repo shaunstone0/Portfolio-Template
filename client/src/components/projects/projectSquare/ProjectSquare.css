@@ -1,49 +1,64 @@
 .project-square {
-  /* border: 1px solid red; */
-  height: 100%;
   padding: 0 40px 0 40px;
   color: #c0c0c0;
 }
-.project-pic {
-  overflow: hidden;
-}
 
-.project-square img {
+.image img {
+  opacity: 50%;
   width: 100%;
-  padding: 0;
-  transition: transform 0.5s ease;
 }
 
-.project-name {
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-}
-
-.creator {
-  margin: 5px 0;
-  font-weight: normal;
-  text-transform: capitalize;
-  font-family: 'Work Sans', sans-serif;
-  font-size: 15px;
-}
-
-.icon {
-  font-size: 40px;
-}
-
-.title-project {
-  margin: 10px 0;
+.square:hover {
+  color: #ffe600;
+  transform: scale(1.02);
+  cursor: pointer;
 }
 
 a {
-  color: #c0c0c0;
-}
-
-.project-square a:hover img {
-  color: #ffe600;
-  transform: scale(1.1);
+  color: #d1d1d1;
 }
 
 a:hover {
   color: #ffe600;
+}
+.square {
+  margin: 10px 0 0 0;
+  border: 1px solid #292929;
+  padding: 30px;
+  transition: all 0.2s ease-in-out;
+}
+
+.project-name {
+  padding: 10px 0 0 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+
+.tech {
+  background-color: #292929;
+  padding: 10px;
+  margin: 0 10px 0 0;
+  font-size: 13px;
+  border-radius: 10px;
+}
+
+.created-box {
+  margin: 20px 0 0 0;
+}
+
+.created {
+  text-transform: uppercase;
+  /* font-weight: bold; */
+  font-size: 14px;
+  width: 50%;
+}
+
+.icon-created {
+  font-size: 30px;
+}
+
+.created-arrow {
+  width: 50%;
 }

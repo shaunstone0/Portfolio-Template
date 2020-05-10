@@ -17,12 +17,15 @@ const Projects = ({
   }, [getProjects]);
 
   return (
-    <div className='flex flex-column full-height marginnav justify-between project'>
-      {loading || data == null ? (
-        <div> loading.. </div>
-      ) : (
+    <div className='marginnav'>
+      <div className='contact-header yellow-bg uppercase bold'> Projects</div>
+      <div className='project-square project-grid'>
+        {loading || data == null ? (
+          <div> loading.. </div>
+        ) : (
           data.map((data) => <ProjectSquare key={data._id} data={data} />)
         )}
+      </div>
     </div>
   );
 };

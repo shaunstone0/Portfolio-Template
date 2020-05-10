@@ -37,7 +37,7 @@
   font-size: 96px;
   font-weight: 800;
   line-height: 77px;
-  width: 50%;
+  width: 30%;
   height: 100%;
   margin: 50px 0 0 100px;
 }
@@ -60,4 +60,9 @@
 .link-span:hover {
   color: #fafafa;
   transform: translateX(50px);
+}
+
+.social-media {
+  margin: 50px 0 0 0;
+  padding: 0 0 0 40px;
 }

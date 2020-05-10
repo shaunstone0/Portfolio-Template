@@ -7,7 +7,7 @@ import Menu from './components/nav/menu/Menu';
 import Landing from './components/landing/Landing';
 import Projects from './components/projects/Projects';
 import FullProject from './components/projects/fullproject/FullProject';
-import Contact from './components/contact/Contact'
+import Contact from './components/contact/Contact';
 import './App.css';
 
 // Redux
@@ -53,7 +53,7 @@ class App extends Component {
               <Route exact path='/' component={Landing} />
               <Route exact path='/projects' component={Projects} />
               <Route exact path='/project/:id' component={FullProject} />
-              <Route exact path='contact' component={Contact} />
+              <Route exact path='/contact' component={Contact} />
             </Fragment>
           </Switch>
         </Router>

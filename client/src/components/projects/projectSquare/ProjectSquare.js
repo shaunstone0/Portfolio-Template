@@ -2,33 +2,37 @@ import React from 'react';
 import './ProjectSquare.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import TechSquare from '../TechSquare';
 
 const ProjectSquare = ({
-  data: { name, picture, desc, tech, todos, author, _id },
+  data: { name, propicture, desc, tech, todos, author, _id, createdAt },
 }) => {
   return (
-    <div>
-      <div className='project-square project'>
-        <Link _id={_id} to={`project/${_id}`}>
-          <div className='project-pic'>
-            <img
-              src={require(`../../../img/projects/${picture}`)}
-              alt='TimeKeeper'
+    <div className='square'>
+      <Link _id={_id} to={`project/${_id}`}>
+        <div className='image'>
+          <img
+            src={require(`../../../img/projects/${propicture}`)}
+            alt='project'
+          />
+        </div>
+        <div className='project-name'>{name}</div>
+
+        <div className='tech-box flex'>
+          {tech.map((tech) => (
+            <TechSquare tech={tech} />
+          ))}
+        </div>
+        <div className='flex align-center created-box'>
+          <div className='created'> Created Date: {createdAt}</div>
+          <div className='created-arrow flex justify-end'>
+            <FontAwesomeIcon
+              icon='arrow-circle-right'
+              className='icon-created'
             />
           </div>
-
-          <div className='flex justify-between title-project'>
-            <div className='small project-name bold'>
-              {name}
-              <p className='creator'>{author}</p>
-            </div>
-            <div>
-              <FontAwesomeIcon icon='arrow-circle-right' className='icon' />
-            </div>
-          </div>
-        </Link>
-      </div>
+        </div>
+      </Link>
     </div>
   );
 };

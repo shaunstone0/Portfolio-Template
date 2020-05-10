@@ -34,6 +34,18 @@ body {
   justify-content: space-between;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
 .grow {
   transition: all 0.2s ease-in-out;
 }
@@ -174,6 +186,6 @@ nav {
   letter-spacing: 2px;
 }
 
-.project{
+.project {
   margin-top: 20px;
 }

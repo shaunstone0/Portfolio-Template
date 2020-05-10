@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
+import { Link } from 'react-router-dom';
 import './ContactButton.css';
 import '../../App.css';
 
@@ -11,9 +12,15 @@ const ContactButton = () => {
   });
   return (
     <div>
-      <animated.button type='submit' className='btn btn-contact' style={props}>
-        Contact Me
-      </animated.button>
+      <Link to='/contact'>
+        <animated.button
+          type='submit'
+          className='btn btn-contact'
+          style={props}
+        >
+          Contact Me
+        </animated.button>
+      </Link>
     </div>
   );
 };

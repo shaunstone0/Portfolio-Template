@@ -1,0 +1,40 @@
+.contact-header {
+  padding: 10px;
+  font-size: 80px;
+  color: #000;
+}
+
+.contact-header-text {
+  font-size: 20px;
+  padding: 20px;
+  border: 1px solid rgb(49, 49, 49);
+  margin: 20px 20px 0 20px;
+}
+
+.contact-info {
+  padding: 20px;
+  background-color: #252525;
+  margin: 20px 20px 0 20px;
+  border-radius: 10px;
+}
+
+.contact-left {
+  padding: 10px;
+  width: 50%;
+}
+
+.contact-left p {
+  margin: 10px 0 0 0;
+}
+
+.contact-right {
+  padding: 10px;
+  width: 70%;
+}
+
+.right-content p {
+  margin: 10px 0 0 0;
+}
+.right-title {
+  font-size: 30px;
+}
